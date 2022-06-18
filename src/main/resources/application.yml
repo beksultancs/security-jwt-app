@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/postgres
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+springdoc:
+    swagger-ui:
+        path: /swagger
+
+app:
+    jwt:
+        secretWord: veryveryveryveryveryveryveryveryveryversecretword
+        expiredAt: 1
+server:
+    error:
+        include-message: always
